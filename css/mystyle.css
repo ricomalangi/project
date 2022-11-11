@@ -1,0 +1,9 @@
+@media screen and (max-width: 767px) {
+    .btn-day{
+        margin-bottom: 6px;
+        display: block;
+    } 
+    .mb-mobile{
+        margin-bottom: 6px;
+    }   
+}
