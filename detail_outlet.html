@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin - Blank</title>
+    <title>SB Admin 2 - Blank</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,7 +17,6 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/mystyle.css">
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
@@ -102,6 +101,8 @@
 
         <!-- Topbar Navbar -->
         <ul class="navbar-nav ml-auto">
+
+
           <div class="topbar-divider d-none d-sm-block"></div>
 
           <!-- Nav Item - User Information -->
@@ -128,60 +129,61 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-            <h1 class="h3 mb-4 text-gray-800">Outlet</h1>
-            <a href="add_outlet.html" class="btn btn-primary btn-icon-split mb-4">
+            <h1 class="h3 mb-4 text-gray-800">Detail Outlet</h1>
+            <a href="outlet.html" class="btn btn-info btn-icon-split mb-4">
                 <span class="icon text-white-50">
-                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-arrow-left"></i>
                 </span>
-                <span class="text">Tambah outlet</span>
+                <span class="text">Kembali</span>
             </a>
             <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Data Outlet</h6>
-                </div>
                 <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th>Kode customer</th>
-                                <th>Nama customer</th>
-                                <th>Nama salesman</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tfoot>
-                            <tr>
-                                <th>Kode customer</th>
-                                <th>Nama customer</th>
-                                <th>Nama salesman</th>
-                                <th>Action</th>
-                            </tr>
-                        </tfoot>
-                        <tbody>
-                            <tr>
-                                <td>UPG0001</td>
-                                <td>Toko surya jaya</td>
-                                <td>Budiman</td>
-                                <td>
-                                    <a href="detail_outlet.html" class="btn btn-md btn-info mb-mobile">Detail</a>
-                                    <a href="edit_outlet.html" class="btn btn-md btn-warning mb-mobile">Edit</a>
-                                    <a href="#" class="btn btn-md btn-danger">Delete</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>UPG0002</td>
-                                <td>Toko surya jaya</td>
-                                <td>Budiman</td>
-                                <td>
-                                    <a href="detail_outlet.html" class="btn btn-md btn-info mb-mobile">Detail</a>
-                                    <a href="edit_outlet.html" class="btn btn-md btn-warning mb-mobile">Edit</a>
-                                    <a href="#" class="btn btn-md btn-danger">Delete</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                        </table>
-                    </div>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="kode_customer">Kode customer</label>
+                            <input type="text" name="kode_customer" id="kode_customer" class="form-control" value="UPG0003" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="nama_customer">Nama customer</label>
+                            <input type="text" name="nama_customer" id="nama_customer" class="form-control" value="Toko stand 11" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="alamat">Alamat</label>
+                            <textarea name="alamat" id="alamat" rows="2" class="form-control" disabled>Jl.bung tomo</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="kabupaten_kota">Kabupaten/Kota</label>
+                            <input type="text" class="form-control" value="Makassar" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="kecamatan">Kecamatan</label>
+                            <input type="text" class="form-control" value="Rappocini" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="kelurahan">Kelurahan</label>
+                            <input type="text" class="form-control" value="Rappocini" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="channel">Channel</label>
+                            <input type="text" name="channel" id="channel" class="form-control" value="channel" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="cycle">Call cycle</label>
+                            <input type="text" name="cycle" id="cycle" class="form-control" value="call cycle" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="kunjungan">Hari kunjungan</label>
+                            <input type="text" class="form-control" value="02/08/2020" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="kunjungan">Kode route</label>
+                            <input type="text" class="form-control" value="route" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="salesman">Nama salesman</label>
+                            <input type="text" class="form-control" value="budiman" disabled>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
