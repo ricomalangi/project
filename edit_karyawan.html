@@ -17,7 +17,6 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/mystyle.css">
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
@@ -102,7 +101,6 @@
 
         <!-- Topbar Navbar -->
         <ul class="navbar-nav ml-auto">
-
           <div class="topbar-divider d-none d-sm-block"></div>
 
           <!-- Nav Item - User Information -->
@@ -129,54 +127,36 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-            <h1 class="h3 mb-4 text-gray-800">Karyawan</h1>
-            <a href="add_karyawan.html" class="btn btn-primary btn-icon-split mb-4">
+            <h1 class="h3 mb-4 text-gray-800">Edit Karyawan</h1>
+            <a href="users.html" class="btn btn-info btn-icon-split mb-4">
                 <span class="icon text-white-50">
-                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-arrow-left"></i>
                 </span>
-                <span class="text">Tambah karyawan</span>
+                <span class="text">Kembali</span>
             </a>
             <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Data Karyawan</h6>
-                </div>
                 <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th>Username</th>
-                                <th>Role</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tfoot>
-                            <tr>
-                                <th>Username</th>
-                                <th>Role</th>
-                                <th>Action</th>
-                            </tr>
-                        </tfoot>
-                        <tbody>
-                            <tr>
-                                <td>Budiman</td>
-                                <td>Sales</td>
-                                <td>
-                                    <a href="edit_karyawan.html" class="btn btn-md btn-info mb-mobile">Edit</a>
-                                    <a href="#" class="btn btn-md btn-danger">Delete</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Rico Malangi</td>
-                                <td>Sales</td>
-                                <td>
-                                    <a href="edit_karyawan.html" class="btn btn-md btn-info mb-mobile">Edit</a>
-                                    <a href="#" class="btn btn-md btn-danger">Delete</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                        </table>
-                    </div>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username" class="form-control" placeholder="input username" value="karyawan 1">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" class="form-control" placeholder="input password">
+                            <small class="form-text text-muted">kosongkan jika tidak ingin merubah password</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="jabatan">Jabatan</label>
+                            <select name="jabatan" id="jabatan" class="form-control">
+                                <option selected>--pilih jabatan--</option>
+                                <option value="#">jabatan a</option>
+                                <option value="#">jabatan b</option>
+                                <option value="#">jabatan c</option>
+                            </select>
+                        </div>
+                        <a href="#" class="btn btn-md btn-primary btn-block">Update</a>
+                    </form>
                 </div>
             </div>
         </div>
